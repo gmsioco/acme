@@ -3,10 +3,13 @@
 use yii\db\Migration;
 
 /**
- * Class m230207_074421_create_table_message
+ * Handles the creation of table `{{%message}}`.
  */
-class m230207_074421_create_table_message extends Migration
+class m230412_010349_create_message_table extends Migration
 {
+    /**
+     * {@inheritdoc}
+     */
     public function up() {
         $this->createTable('message', [
             'id' => $this->primaryKey()->unsigned(),
@@ -39,5 +42,4 @@ class m230207_074421_create_table_message extends Migration
 
         $this->dropTable('message');
     }
-
 }

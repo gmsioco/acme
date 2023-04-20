@@ -3,10 +3,13 @@
 use yii\db\Migration;
 
 /**
- * Class m230206_071029_create_table_country
+ * Handles the creation of table `{{%country}}`.
  */
-class m230206_071029_create_table_country extends Migration
+class m230412_010315_create_country_table extends Migration
 {
+    /**
+     * {@inheritdoc}
+     */
     public function safeUp() {
         $this->createTable('country', [
             'id' => $this->primaryKey()->unsigned(),

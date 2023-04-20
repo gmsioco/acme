@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m230207_074439_create_table_phone_number
+ * Handles the creation of table `{{%phone_number}}`.
  */
-class m230207_074439_create_table_phone_number extends Migration
+class m230412_010426_create_phone_number_table extends Migration
 {
     /**
      * {@inheritdoc}

@@ -2,18 +2,8 @@
 
 use yii\db\Migration;
 
-/**
- * Class m230124_083419_create_table_place_lang
- */
-class m230124_083419_create_table_place_lang extends Migration
-{
-    /**
-     * {@inheritdoc}
-     */
+class m230411_085017_create_place_table extends Migration {
 
-
-
-    // Use up()/down() to run migration code without a transaction.
     public function up() {
         $this->createTable('place', [
             'id' => $this->primaryKey()->unsigned(),
@@ -29,4 +19,13 @@ class m230124_083419_create_table_place_lang extends Migration
         $this->dropTable('place');
     }
 
+    /*
+      // Use safeUp/safeDown to run migration code within a transaction
+      public function safeUp()
+      {
+      }
+      public function safeDown()
+      {
+      }
+     */
 }
